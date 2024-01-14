@@ -1,0 +1,164 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+    list-style: none;
+    text-decoration: none;
+}
+header{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 800;
+    display: flex;
+    justify-content: space-between;
+    padding: 33px 9%;
+    background-color: transparent;
+}
+body{
+    background-color: bisque;
+}
+.logo{
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
+}
+.board{
+    display: flex;
+}
+.board{
+    color: white;
+    margin-left: 50px;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+    justify-content: space-between;
+}
+.board a:hover{
+    border-bottom: 2px solid white;
+}
+#menu-icon{
+    color: white;
+    font-size: 40px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+.hero{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(245.59deg, burlywood 0%, rgb(235, 154, 67));
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+section{
+    padding: 0 19%;
+}
+.hero-text h5{
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 40px;
+}
+.hero-text h1{
+    font-family: 'Permanent Marker' , cursive;
+    font-size: 90px;
+    line-height: 1;
+    color: beige;
+    margin: 0 0 45px;
+}
+.hero-text h4{
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 10px;
+}
+.hero-text p{
+    color: white;
+    font-size: 15px;
+    line-height: 1.9;
+    margin-bottom: 40px;
+}
+.hero-text a{
+    display: inline-block;
+    color: white;
+    background: lightsalmon;
+    border: 1px solid transparent;
+    padding: 12px 30px;
+    line-height: 1.4;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition: all .55s ease;
+}
+.hero-text a:hover{
+    background: transparent;
+    border: 1px solid white;
+    transform: translate(8px);
+}
+.hero-text a.login{
+    background: transparent;
+    border: 1px solid white;
+    margin-left: 20px;
+}
+.hero-text a.login i{
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.icons{
+    position: absolute;
+    top: 50%;
+    padding: 0 9%;
+    transform: translateY(-50%);
+}
+.icons i{
+    display:block;
+    margin: 26px 0;
+    font-size: 24px;
+    color:white;
+    transition: all .50s ease;
+}
+.icons i:hover{
+    color: bisque;
+    transform: translateY(-5px);
+}
+.scrow-down{
+    position: absolute;
+    bottom: 6%;
+    right: 9%;
+}
+.scrow-down i{
+    display:block;
+    padding: 12px;
+    font-size: 25px;
+    color: white;
+    background: #dbddd2;
+    border-radius: 30px;
+    transition: all .50s ease;
+}
+.scrow-down i:hover{
+    transform: translateY(-5px);
+
+}
+@media (max-width: 1535px){
+    header{
+        padding: 15px 3%;
+        transition: .2s;
+    }
+    .icons{
+        padding: 0 3%;
+        transition: .2s;
+    }
+    .scrow-down{
+        right: 3%;
+        transition: .3s;
+    }
+
+}
